@@ -26,6 +26,7 @@ dependencies:
   cupertino_icons: ^1.0.0
   font_awesome_flutter: ^8.10.1
   image_picker: ^0.6.7+14
+  location: ^3.1.0
   path: ^1.7.0
   path_provider: ^1.6.24
   progress_indicators: ^0.1.5

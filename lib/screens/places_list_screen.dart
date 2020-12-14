@@ -111,6 +111,15 @@ class PlacesList extends StatelessWidget {
                                       child: Text(greatPlaces
                                           .items[i].location.address),
                                     ),
+                                    trailing: IconButton(
+                                      icon: Icon(Icons.delete),
+                                      onPressed: () {
+                                        Provider.of<GreatPlaces>(context,
+                                                listen: false)
+                                            .removeItem(
+                                                greatPlaces.items[i].id);
+                                      },
+                                    ),
                                     onTap: () {
                                       Navigator.of(context).pushNamed(
                                         PlaceDetailScreen.routeName,

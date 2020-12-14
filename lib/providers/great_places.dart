@@ -64,4 +64,8 @@ class GreatPlaces with ChangeNotifier {
     data.rawDelete('DELETE FROM user_places WHERE id=$id');
     notifyListeners();
   }
+
+  Place findById(String id) {
+    return _items.firstWhere((place) => place.id == id);
+  }
 }

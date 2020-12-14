@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Places',
         theme: ThemeData(
-          primarySwatch: Colors.pink,
+          primarySwatch: Colors.teal,
           accentColor: Colors.teal,
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),

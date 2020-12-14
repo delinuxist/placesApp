@@ -4,6 +4,7 @@ import 'package:progress_indicators/progress_indicators.dart';
 
 import '../screens/add_place_screen.dart';
 import '../providers/great_places.dart';
+import '../screens/place_detail_screen.dart';
 
 class PlacesList extends StatelessWidget {
   @override
@@ -110,6 +111,12 @@ class PlacesList extends StatelessWidget {
                                       child: Text(greatPlaces
                                           .items[i].location.address),
                                     ),
+                                    onTap: () {
+                                      Navigator.of(context).pushNamed(
+                                        PlaceDetailScreen.routeName,
+                                        arguments: greatPlaces.items[i].id,
+                                      );
+                                    },
                                   ),
                                 ),
                               ),
